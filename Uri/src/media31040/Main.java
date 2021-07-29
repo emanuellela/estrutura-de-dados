@@ -1,13 +1,14 @@
 package media31040;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class Main 
 {
     public static void main(String[] args)throws IOException 
     {
         Scanner entrada = new Scanner(System.in);
-        float n1,n2,n3,n4, media,nota;
+        float n1,n2,n3,n4
+        float media;
+        float nota;
         String mf;
         n1 = entrada.nextFloat();
         n2 = entrada.nextFloat();
