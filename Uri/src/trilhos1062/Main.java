@@ -5,7 +5,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
-
 public class Main
 {
   public static void main(String[] args) throws IOException
@@ -22,32 +21,31 @@ public class Main
               String[] ss = s.split("\\s+");
               int[] target = new int[N];
               Stack<Integer> stack = new Stack<>();
-              
               for(int i = 0; i < N; i++)
               {
                   target[i] = Integer.parseInt(ss[i]);
               }
-              // O próximo número de carro é 1 e o veículo de saída é 0.
-              int proximo = 1, carro = 0;
+              //prÃ³ximo nÃºmero do bloco Ã© 1 e o de saÃ­da Ã© 0
+              int proximo = 1, bloco = 0;
               boolean vago = true;
-              while (carro < N)
+              while (bloco < N)
               {
-                  // Se o próximo alvo e o próximo número de carro forem iguais, o carro é empurrado para a pilha que é estourada
-                  if(target[carro] == proximo)
+                  //se o prÃ³ximo alvo e o prÃ³ximo nÃºmero do bloco forem iguais, o bloco Ã© empurrado para a pilha que Ã© estourada
+                  if(target[bloco] == proximo)
                   {
                       proximo++;
-                      carro++;
-                  // Se a pilha não estiver vazia e o topo da pilha for o próximo destino, a pilha é estourada.
+                      bloco++;
+                  //se a pilha nÃ£o estiver vazia e o topo da pilha for o prÃ³ximo destino, a pilha Ã© estourada
                   }
-                  else if(!stack.isEmpty() && target[carro] == stack.peek())
+                  else if(!stack.isEmpty() && target[bloco] == stack.peek())
                   {
                       stack.pop();
-                      carro++;
-                      // Caso contrário, ele só pode ser colocado na pilha
+                      bloco++;
+                      //caso contrÃ¡rio, ele sÃ³ pode ser colocado na pilha
                   }
                   else
                   {
-                      // Quando não há carro quando próximo > N, não é viável neste momento.
+                      //quando nÃ£o hÃ¡ blocos, 'prÃ³ximo > N' Ã© falso
                       if(proximo > N)
                       {
                           vago = false;
@@ -60,5 +58,5 @@ public class Main
           }
           System.out.print('\n');
       }
-  }
+   }
 }
