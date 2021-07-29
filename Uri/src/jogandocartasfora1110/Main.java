@@ -27,54 +27,54 @@ public class Main
 					sb.append(", ");
 				}
 				sb.append(String.valueOf(pilha.get(topo)));
-				topo++; // simula uma remoção da pilha
+				topo++; // simula uma remoÃ§Ã£o da pilha
 				qntCartas--; // por remover uma carta
 				realoca(topo, pilha); // coloca a carta no topo na base
 				topo++; // considera a proxima carta
 			}
-            sb.append("\nRemaining card: " + pilha.get(topo) + "\n");
-            respostas[i] = sb.toString();
+            		sb.append("\nRemaining card: " + pilha.get(topo) + "\n");
+            		respostas[i] = sb.toString();
 		}
 		int qntCartas = leitor(br);
 		while (qntCartas != 0) 
 		{
-        bw.write(respostas[qntCartas-1]);
-        qntCartas = leitor(br);
+    			bw.write(respostas[qntCartas-1]);
+      			qntCartas = leitor(br);
 		}
 		bw.flush();       
 		bw.close();
 	}
 	static void insere(int qte, ArrayList<Integer> pilha) 
 	{
-        for (int i = 0; i < qte; i++) 
-        {
-            pilha.add(i+1);
-        }
-    }
-    static void realoca(int topo, ArrayList<Integer> pilha) 
-    {
-        int carta = pilha.get(topo);      
-        pilha.add(carta);
-    } 
-    static int leitor(BufferedReader br) throws NumberFormatException, IOException 
-    {
-       int n;
-       int resp = 0;
-       int carta = 1;
-       while (true)
-       {
-           n = br.read();
-           if (n >= '0' && n <= '9') break;
-           if (n == '-') carta = -1;
-           if (n == '+') carta = 1;
-       }
-       while (true) 
-       {
-           resp = resp*10 + n-'0';
-           n = br.read();
-           if (n < '0' || n > '9') break;
-       }
-       return resp*carta;
-    }
+		for (int i = 0; i < qte; i++) 
+		{
+		    pilha.add(i+1);
+		}
+	}
+	static void realoca(int topo, ArrayList<Integer> pilha) 
+	{
+		int carta = pilha.get(topo);      
+		pilha.add(carta);
+	} 
+   	static int leitor(BufferedReader br) throws NumberFormatException, IOException 
+	{
+	       int n;
+	       int resp = 0;
+	       int carta = 1;
+	       while (true)
+	       {
+		   n = br.read();
+		   if (n >= '0' && n <= '9') break;
+		   if (n == '-') carta = -1;
+		   if (n == '+') carta = 1;
+	       }
+	       while (true) 
+	       {
+		   resp = resp*10 + n-'0';
+		   n = br.read();
+		   if (n < '0' || n > '9') break;
+	       }
+	       return resp*carta;
+	}
 }
 
