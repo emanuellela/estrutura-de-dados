@@ -1,7 +1,6 @@
 package intervalo1037;
 import java.io.IOException;
 import java.util.Scanner;
-
 public class Main 
 {
     public static void main(String[] args) throws IOException 
@@ -26,5 +25,5 @@ public class Main
         {
         	System.out.println("Fora de intervalo");
         }
-	}
+    }
 }
