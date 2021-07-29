@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Scanner;
 public class Main 
 {
-	public static void main(String args[])
+    public static void main(String args[])
     {
         Scanner entrada = new Scanner(System.in);
         String nome = "";
@@ -12,7 +12,6 @@ public class Main
         String resp = "";
         int maior = 0;
         String amigo = "";
-  
         ArrayList<String>nmyes = new ArrayList<>();
         ArrayList<String>nmno = new ArrayList<>();
         do
@@ -62,9 +61,8 @@ public class Main
                 maior = nm.length();
                 amigo = nm;
             }
-            
         }
-        //compara se o amigo é 1 ou 0
+        //compara se o amigo Ã© 1 ou 0
         Collections.sort(nmyes);
         for(String nm : nmyes)
         {
