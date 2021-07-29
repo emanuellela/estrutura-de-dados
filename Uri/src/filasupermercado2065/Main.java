@@ -42,7 +42,6 @@ public class Main
         System.out.println(tempoMax);
         return;
     }
-   
     public static void main(String[] args) throws NumberFormatException, IOException 
     {
         Main m = new Main();
