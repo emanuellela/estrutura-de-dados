@@ -10,7 +10,6 @@ public class Main
         String nome;
         N = entrada.nextInt();
         entrada.nextLine();
-        
         float tentativas[] = new float[3];
         float acertos[] = new float[3];
         String tentativasA[] = new String[3];
