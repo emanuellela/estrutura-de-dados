@@ -1,10 +1,9 @@
-# Estrutura de Dados 2021/1 :computer: 
+# Estrutura de Dados - UNIPAMPA 2021/1 :computer: 
 
-Prof. Williamson Silva
+Prof. Williamson Silva :apple:
 
-## Portfólio individual
-- AG1
-- AG2
-- AG3
+## Uri Online Judge
+- Relembrando Java;
+- Listas, pilhas e filas.
 
 @author Emanuelle Alves
