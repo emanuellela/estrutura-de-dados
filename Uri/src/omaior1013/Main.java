@@ -7,7 +7,8 @@ public class Main
     {
     	Scanner entrada = new Scanner(System.in);
         int a,b,c;
-        int MaiorAB,Maior;
+        int MaiorAB;
+        int Maior;
         a= entrada.nextInt();
         b= entrada.nextInt();
         c= entrada.nextInt();

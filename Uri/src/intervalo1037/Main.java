@@ -8,7 +8,6 @@ public class Main
         Scanner entrada = new Scanner(System.in);
         float valor;
         valor = entrada.nextFloat();
-
         if (valor > 25 && valor <= 50)
         {
         	System.out.println("Intervalo " + "(25,50]");
@@ -23,7 +22,7 @@ public class Main
         }
         else 
         {
-        	System.out.println("Fora de intervalo");
+        	System.out.println("Fora de intervalo!");
         }
     }
 }

@@ -8,6 +8,6 @@ public class Main
         int A = entrada.nextInt();
         int B = entrada.nextInt();
         int X = A + B;
-        System.out.println("X = "+X);
+        System.out.println("Valor X = "+X);
     }
 }

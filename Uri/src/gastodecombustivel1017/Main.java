@@ -6,7 +6,7 @@ public class Main
     public static void main(String[] args) throws IOException 
     {
         Scanner entrada = new Scanner(System.in);
-        float gv, vm; //gasto da viagem(em horas) e velocidade média(em km/h)
+        float gv, vm; //gasto da viagem(em horas) e velocidade media(em km/h)
         float r;
         gv = entrada.nextInt();
         vm = entrada.nextInt();

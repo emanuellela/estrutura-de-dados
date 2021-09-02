@@ -6,7 +6,7 @@ public class Main
     public static void main(String[] args)throws IOException 
     {
         Scanner entrada = new Scanner(System.in);
-        float n1,n2,n3,n4
+        float n1,n2,n3,n4;
         float media;
         float nota;
         String mf;
@@ -19,11 +19,11 @@ public class Main
         System.out.println("Media: " + mf);
         if(media >= 7.0f)
         {
-            System.out.println("Aluno aprovado.");
+            System.out.println("Aluno aprovado!");
         }
         else if (media < 5.0f)
         {
-            System.out.println("Aluno reprovado.");
+            System.out.println("Aluno reprovado...");
         }
         else if(media >= 5.0f && media <= 6.9f)
         {
@@ -34,11 +34,11 @@ public class Main
             String mediafinal = String.format("%.1f", notamedia);
             if(notamedia >= 5.0f)
             {
-                System.out.println("Aluno aprovado.");
+                System.out.println("Aluno aprovado!");
             }
             else if(notamedia < 5.0f)
             {
-                System.out.println("Aluno reprovado.");
+                System.out.println("Aluno reprovado...");
             }
             System.out.println("Media final: " + mediafinal);
         }
