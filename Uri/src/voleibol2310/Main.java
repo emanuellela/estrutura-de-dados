@@ -6,8 +6,8 @@ public class Main
     public static void main(String[] args) throws IOException 
     {
         Scanner entrada = new Scanner(System.in);
-        int N;
-        String nome;
+        int N; //numero de jogadores
+        String nome; //nome de cada um dos jogadores
         N = entrada.nextInt();
         entrada.nextLine();
         float tentativas[] = new float[3];
@@ -33,6 +33,7 @@ public class Main
             double resultado1 = ((acertos[0]* 100) / tentativas[0]);
             double resultado2 = ((acertos[1]* 100) / tentativas[1]);
             double resultado3 = ((acertos[2]* 100) / tentativas[2]);
+            //total de saques, bloqueios e ataques do time todo que resultaram em pontos
             System.out.printf("Pontos de Saque: %.2f %%.\n", resultado1);
             System.out.printf("Pontos de Bloqueio: %.2f %%.\n",resultado2);
             System.out.printf("Pontos de Ataque: %.2f %%.\n",resultado3);         

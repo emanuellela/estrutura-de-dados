@@ -25,27 +25,26 @@ public class Main
               {
                   target[i] = Integer.parseInt(ss[i]);
               }
-              //próximo número do bloco é 1 e o de saída é 0
+              //proximo numero do bloco eh 1 e o de saida eh 0
               int proximo = 1, bloco = 0;
               boolean vago = true;
               while (bloco < N)
               {
-                  //se o próximo alvo e o próximo número do bloco forem iguais, o bloco é empurrado para a pilha que é estourada
+                  //se o proximo alvo e o proximo numero do bloco forem iguais, o bloco eh empurrado para a pilha que eh estourada
                   if(target[bloco] == proximo)
                   {
                       proximo++;
                       bloco++;
-                  //se a pilha não estiver vazia e o topo da pilha for o próximo destino, a pilha é estourada
+                  //se a pilha nao estiver vazia e o topo da pilha for o proximo destino, a pilha eh estourada
                   }
                   else if(!stack.isEmpty() && target[bloco] == stack.peek())
                   {
                       stack.pop();
-                      bloco++;
-                      //caso contrário, ele só pode ser colocado na pilha
+                      bloco++;   
                   }
-                  else
+                  else //caso contrario, ele nao pode ser colocado na pilha
                   {
-                      //quando não há blocos, 'próximo > N' é falso
+                      //quando nao ha blocos, 'proximo > N' eh falso
                       if(proximo > N)
                       {
                           vago = false;

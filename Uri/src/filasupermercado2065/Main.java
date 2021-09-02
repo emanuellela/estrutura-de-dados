@@ -8,22 +8,22 @@ public class Main
 	public void process() throws NumberFormatException, IOException 
 	{
         Scanner entrada = new Scanner(System.in);
-        int numFuncionarios = entrada.nextInt();
-        int numClientes = entrada.nextInt();
+        int numFuncionarios = entrada.nextInt();//numero de funcionários no caixa 
+        int numClientes = entrada.nextInt(); //numero de clientes
         Queue<Funcionario> queue = new PriorityQueue<>();
         int[] tempFuncionarios = new int[numFuncionarios];
         int[] numItensClientes = new int[numClientes];
         for (int i = 0; i < numFuncionarios; i++) 
         {
-            tempFuncionarios[i] = entrada.nextInt();           
+            tempFuncionarios[i] = entrada.nextInt();//quanto tempo leva para o i-esimo funcionario processar um item
         }
         for (int i = 0; i < numFuncionarios; i++)
         {
             queue.add(new Funcionario(i, 0));           
         }
-        for (int i = 0; i < numClientes; i++) 
+        for (int j = 0; j < numClientes; j++) 
         {
-            numItensClientes[i] = entrada.nextInt();           
+            numItensClientes[j] = entrada.nextInt();//quantos itens o j-esimo cliente tem em sua cesta         
         }
         for (int i = 0; i < numClientes; i++) 
         {
@@ -64,6 +64,6 @@ class Funcionario implements Comparable<Funcionario>
         {
             return this.id-f.id;
         }
-        return this.tempo-f.tempo;
+        return this.tempo-f.tempo; //quanto tempo leva para que todos os clientes sejam atendidos
     }
 }

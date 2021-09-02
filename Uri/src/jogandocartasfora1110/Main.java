@@ -27,10 +27,10 @@ public class Main
 					sb.append(", ");
 				}
 				sb.append(String.valueOf(pilha.get(topo)));
-				topo++; // simula uma remoção da pilha
-				qntCartas--; // por remover uma carta
-				realoca(topo, pilha); // coloca a carta no topo na base
-				topo++; // considera a proxima carta
+				topo++; //simula uma remocao da pilha
+				qntCartas--; //remover uma carta
+				realoca(topo, pilha); //coloca a carta no topo
+				topo++; //considera a proxima carta
 			}
             		sb.append("\nRemaining card: " + pilha.get(topo) + "\n");
             		respostas[i] = sb.toString();
@@ -63,18 +63,17 @@ public class Main
 	       int carta = 1;
 	       while (true)
 	       {
-		   n = br.read();
-		   if (n >= '0' && n <= '9') break;
-		   if (n == '-') carta = -1;
-		   if (n == '+') carta = 1;
+	    	   n = br.read();
+	    	   if (n >= '0' && n <= '9') break;
+	    	   if (n == '-') carta = -1;
+	    	   if (n == '+') carta = 1;
 	       }
 	       while (true) 
 	       {
-		   resp = resp*10 + n-'0';
-		   n = br.read();
-		   if (n < '0' || n > '9') break;
+	    	   resp = resp*10 + n-'0';
+	    	   n = br.read();
+	    	   if (n < '0' || n > '9') break;
 	       }
 	       return resp*carta;
 	}
 }
-

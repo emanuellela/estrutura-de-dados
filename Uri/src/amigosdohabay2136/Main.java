@@ -6,8 +6,8 @@ public class Main
 {
     public static void main(String args[])
     {
-        Scanner entrada = new Scanner(System.in);
-        String nome = "";
+        Scanner entrada = new Scanner(System.in);//caso de teste
+        String nome = ""; 
         String nome1;
         String resp = "";
         int maior = 0;
@@ -18,14 +18,14 @@ public class Main
         {
             int cont = 0;
             nome = entrada.nextLine();
-            if(nome.equalsIgnoreCase("FIM"))
+            if(nome.equalsIgnoreCase("FIM")) //caso não queira ser O Amigo do Habay
             {
                 break;
             }
             String info[] = nome.split(" ");
             nome1 = info[0];
             resp = info[1];
-            if(resp.equalsIgnoreCase("YES"))
+            if(resp.equalsIgnoreCase("YES")) //caso o usuario queira ser O Amigo do Habay
             { 
                 for(String nY : nmyes)
                 {
@@ -62,7 +62,7 @@ public class Main
                 amigo = nm;
             }
         }
-        //compara se o amigo Ã© 1 ou 0
+        //compara amigo 1 ou 0
         Collections.sort(nmyes);
         for(String nm : nmyes)
         {
@@ -74,6 +74,6 @@ public class Main
             System.out.println(nm);
         }
         System.out.print("\n"); 
-        System.out.println("Amigo do Habay:\n"+ amigo);
+        System.out.println("Amigo do Habay:\n"+ amigo); 
     }
 }

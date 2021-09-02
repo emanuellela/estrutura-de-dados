@@ -12,7 +12,7 @@ public class Main
 			int abrirParenteses = 0;
 			try 
 			{
-				for (int i = 0; i < input.length(); i++) 
+				for (int i = 0; i < input.length(); i++)//n expressões como entrada, cada uma delas com até 1000 caracteres
 				{
 					char character = input.charAt(i);
 					if(character == ')')
@@ -31,11 +31,11 @@ public class Main
 				if (abrirParenteses > 0) 
 				{
 					System.out.println("incorrect\n");
-		       		}
+		       	}
 				else 
-		      		{
+		      	{
 					System.out.println("correct\n");
-		      		}
+		      	}
 			} 
 			catch(Exception ex) 
 			{

@@ -9,20 +9,17 @@ public class Main
 	    int qFila,saiu,sF = 0;
 	    String pessoas;
 	    String qmSaiu;
-	    //quantidade de pessoas na fila
-	    qFila = entrada.nextInt();
+	    qFila = entrada.nextInt();//quantidade de pessoas na fila
 	    entrada.nextLine();
 	    String people[] = new String[qFila];
 	    ArrayList<Integer> fila = new ArrayList<>();
 	    ArrayList<Integer> saiuFila = new ArrayList<>();
-	    //número das pessoas
 	    pessoas = entrada.nextLine();
 	    people = pessoas.split(" ");
 	    for(int i = 0; i<qFila; i++)
 	    {
 	        fila.add(Integer.parseInt(people[i]));
 	    }
-	    //quantos sairam
 	    saiu = entrada.nextInt();
 	    entrada.nextLine();
 	    String saiuP[] = new String[saiu];
