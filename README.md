@@ -8,5 +8,6 @@ Prof. Williamson Silva :apple:
 ## Uri Online Judge
 - Relembrando Java;
 - Listas, pilhas e filas.
+- Pesquisa Binária e Sequencial 
 
 @author Emanuelle Alves
